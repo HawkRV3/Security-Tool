@@ -1,0 +1,34 @@
+1. ValidatePassword(password):
+Esta función valida la contraseña ingresada por el usuario.
+Comprueba si la contraseña cumple con todos los criterios de validez, incluida la longitud, presencia de mayúsculas, minúsculas, números y caracteres especiales.
+Retorna true si la contraseña es válida y false si no lo es.
+
+2. UpdateCriteria(password):
+Esta función actualiza los criterios de validación de contraseña en tiempo real mientras el usuario escribe.
+Toma la contraseña ingresada como argumento.
+Comprueba cada criterio individual (longitud, mayúsculas, minúsculas, números y caracteres especiales) y actualiza dinámicamente la visualización de estos criterios en la interfaz de usuario.
+
+3. UpdateCriteriaElement(elementId, isValid):
+Esta función actualiza el estilo visual de un elemento de criterio de contraseña en función de si el criterio es válido o no.
+Toma dos argumentos: el elementId del elemento HTML que representa el criterio y un booleano isValid que indica si el criterio es válido.
+Agrega o elimina las clases valid e invalid del elemento para reflejar su estado de validez.
+
+4. Funciones de validación individuales:
+Estas funciones (checkLength, checkUppercase, checkLowercase, checkDigit, checkSpecialChar) se utilizan dentro de validatePassword para verificar cada criterio individual de la contraseña.
+Cada función toma la contraseña como argumento y utiliza expresiones regulares para comprobar si se cumple el criterio específico.
+Retorna true si el criterio se cumple y false si no.
+
+5. Event Listeners:
+Los event listeners están asociados a los eventos relevantes en la página.
+input listener en el campo de contraseña: Actualiza los criterios de contraseña en tiempo real mientras el usuario escribe.
+submit listener en el formulario: Evita que el formulario se envíe y muestra un mensaje de validación después de validar la contraseña.
+
+6. Mensajes de Retroalimentación:
+Después de validar la contraseña, se muestra un mensaje claro al usuario para informarle si la contraseña es válida o no.
+Los mensajes de retroalimentación se actualizan dinámicamente en función del resultado de la validación.
+
+7. Aspectos específicos del código:
+Se utiliza el método classList para agregar o quitar clases CSS dinámicamente y actualizar el estilo visual de los elementos.
+Se emplean expresiones regulares para verificar la presencia de caracteres específicos en la contraseña.
+Se han utilizado nombres de variables y funciones descriptivos para mejorar la legibilidad y comprensión del código.
+En resumen, las funciones del código JavaScript se encargan de validar la contraseña, actualizar los criterios de validación en tiempo real, gestionar eventos y proporcionar retroalimentación al usuario de manera clara y efectiva.
