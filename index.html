@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validación de Contraseña</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Formulario de Registro</h2>
+        <form id="registerForm">
+            <label for="password">Contraseña:</label>
+            <div class="password-container">
+                <input type="text" id="password" name="password" required>
+            </div>
+            <div id="criteria">
+                <p id="lengthCriteria" class="invalid">Mínimo 8 caracteres</p>
+                <p id="uppercaseCriteria" class="invalid">Al menos una letra mayúscula</p>
+                <p id="lowercaseCriteria" class="invalid">Al menos una letra minúscula</p>
+                <p id="digitCriteria" class="invalid">Al menos un número</p>
+                <p id="specialCharCriteria" class="invalid">Al menos un carácter especial</p>
+            </div>
+            <button type="submit" class="submit-button">Registrar</button>
+            <p id="message"></p>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
