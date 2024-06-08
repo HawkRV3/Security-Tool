@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: url('cyberpunk-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #00ff99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.85);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #00ff99;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #00ff99;
+    text-shadow: 0 0 5px #00ff99;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 10px;
+    color: #00ff99;
+}
+
+.password-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #00ff99;
+    border-radius: 5px;
+    background-color: #1a1a1a;
+    color: #00ff99;
+}
+
+button {
+    padding: 10px;
+    background-color: #1a1a1a;
+    color: #00ff99;
+    border: 1px solid #00ff99;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #00ff99;
+    color: #1a1a1a;
+}
+
+.submit-button {
+    width: 100px;
+    align-self: center;
+}
+
+#criteria {
+    margin-top: 10px;
+    text-align: left;
+}
+
+#criteria p {
+    margin: 5px 0;
+    transition: color 0.3s;
+}
+
+#criteria .invalid {
+    color: red;
+}
+
+#criteria .valid {
+    color: #00ff99;
+}
+
+#message {
+    margin-top: 10px;
+    color: red;
+    text-shadow: 0 0 5px red;
+}
